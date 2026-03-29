@@ -3,7 +3,7 @@ import React from 'react';
 const Navbar = () => {
     return (
         
-        < div className = 'flex mt-[10px] shadow-lg mx-auto pb-[10px]  justify-around' >
+        < div className = 'sticky top-0 z-50 flex mt-[10px] shadow-lg mx-auto pb-[10px]  justify-around' >
             <div>
                 <h1 className="text-[40px] font-bold bg-gradient-to-r from-[#612ff7] to-[#8d19fa] bg-clip-text text-transparent">DigiTools</h1>
             </div>

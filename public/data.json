@@ -1,0 +1,172 @@
+[
+  {
+    "id": 1,
+    "name": "Starter Pack",
+    "description": "Perfect for individuals just getting started with digital tools and basic productivity needs.",
+    "price": 0,
+    "period": "one-time",
+    "tag": "Free",
+    "tagType": "new",
+    "features": [
+      "5 projects",
+      "Basic templates",
+      "2GB storage",
+      "Email support",
+      "Export to PDF"
+    ],
+    "icon": "FiBox"
+  },
+  {
+    "id": 2,
+    "name": "Resume Builder Pro",
+    "description": "Create stunning, ATS-friendly resumes in minutes with AI-powered suggestions.",
+    "price": 12,
+    "period": "monthly",
+    "tag": "Popular",
+    "tagType": "popular",
+    "features": [
+      "100+ templates",
+      "ATS optimization",
+      "Export to PDF & DOCX",
+      "AI content suggestions",
+      "Unlimited resumes"
+    ],
+    "icon": "FiFileText"
+  },
+  {
+    "id": 3,
+    "name": "Design Studio",
+    "description": "Professional-grade design tools for creators, marketers, and small businesses.",
+    "price": 19,
+    "period": "monthly",
+    "tag": "New",
+    "tagType": "new",
+    "features": [
+      "500+ design assets",
+      "Brand kit builder",
+      "Team collaboration",
+      "Social media export",
+      "Custom fonts & colors"
+    ],
+    "icon": "FiPenTool"
+  },
+  {
+    "id": 4,
+    "name": "SEO Analyzer",
+    "description": "Boost your website rankings with real-time SEO audits and keyword tracking.",
+    "price": 29,
+    "period": "monthly",
+    "tag": "Best Seller",
+    "tagType": "best seller",
+    "features": [
+      "Full site SEO audit",
+      "Keyword rank tracker",
+      "Competitor analysis",
+      "Weekly reports",
+      "Google Search Console integration"
+    ],
+    "icon": "FiTrendingUp"
+  },
+  {
+    "id": 5,
+    "name": "AI Content Writer",
+    "description": "Generate blogs, ads, emails, and social posts instantly using advanced AI.",
+    "price": 39,
+    "period": "monthly",
+    "tag": "Popular",
+    "tagType": "popular",
+    "features": [
+      "Unlimited AI writing",
+      "30+ content types",
+      "Plagiarism checker",
+      "Tone customization",
+      "Multi-language support"
+    ],
+    "icon": "FiEdit3"
+  },
+  {
+    "id": 6,
+    "name": "Social Scheduler",
+    "description": "Plan, schedule, and auto-publish content across all major social platforms.",
+    "price": 15,
+    "period": "monthly",
+    "tag": "New",
+    "tagType": "new",
+    "features": [
+      "10 social accounts",
+      "Bulk scheduling",
+      "Analytics dashboard",
+      "Content calendar",
+      "Auto hashtag suggestions"
+    ],
+    "icon": "FiCalendar"
+  },
+  {
+    "id": 7,
+    "name": "Team Workspace",
+    "description": "Collaborate seamlessly with your team on projects, files, and communications.",
+    "price": 199,
+    "period": "yearly",
+    "tag": "Best Value",
+    "tagType": "best seller",
+    "features": [
+      "Unlimited team members",
+      "100GB shared storage",
+      "Real-time collaboration",
+      "Role-based access",
+      "Priority support"
+    ],
+    "icon": "FiUsers"
+  },
+  {
+    "id": 8,
+    "name": "E-commerce Toolkit",
+    "description": "Everything you need to launch and grow your online store from day one.",
+    "price": 49,
+    "period": "monthly",
+    "tag": "Hot",
+    "tagType": "popular",
+    "features": [
+      "Product listing tools",
+      "Inventory management",
+      "Payment gateway integration",
+      "Order tracking",
+      "Sales analytics"
+    ],
+    "icon": "FiShoppingCart"
+  },
+  {
+    "id": 9,
+    "name": "Video Editor Cloud",
+    "description": "Edit, render, and publish professional videos entirely from your browser.",
+    "price": 59,
+    "period": "monthly",
+    "tag": "New",
+    "tagType": "new",
+    "features": [
+      "4K video export",
+      "300+ transitions & effects",
+      "Auto subtitle generator",
+      "Cloud render farm",
+      "Direct YouTube/TikTok upload"
+    ],
+    "icon": "FiVideo"
+  },
+  {
+    "id": 10,
+    "name": "Enterprise Suite",
+    "description": "The complete DigiTools experience for large teams with advanced security and support.",
+    "price": 499,
+    "period": "yearly",
+    "tag": "Best Seller",
+    "tagType": "best seller",
+    "features": [
+      "All products included",
+      "Dedicated account manager",
+      "SSO & advanced security",
+      "Custom integrations",
+      "SLA guarantee & 24/7 support"
+    ],
+    "icon": "FiBriefcase"
+  }
+]
