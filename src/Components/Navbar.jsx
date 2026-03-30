@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { FaCartArrowDown, FaBars, FaTimes } from "react-icons/fa";
 
-const Navbar = () => {
+const Navbar = ({cart}) => {
     const [menuOpen, setMenuOpen] = useState(false);
     const navLinks = ["Products", "Features", "Pricing", "Testimonials", "FAQ"];
 
@@ -17,7 +17,7 @@ const Navbar = () => {
                 </div>
 
                 <div className='flex justify-center items-center gap-[18px]'>
-                    <button className='items-center flex justify-center'><FaCartArrowDown />(0)</button>
+                    <button className='items-center flex justify-center'><FaCartArrowDown />({cart})</button>
                     <button className='hidden md:block btn rounded-full'>Login</button>
                     <button className='hidden md:block btn rounded-full px-10 bg-linear-to-r from-[#642ff7] to-[#9016fa] text-white'>Get Started</button>
                     <button className='md:hidden text-[22px] text-[#234c75]' onClick={() => setMenuOpen(p => !p)}>

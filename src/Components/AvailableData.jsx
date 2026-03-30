@@ -1,5 +1,6 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { FiBox, FiFileText, FiPenTool, FiTrendingUp, FiEdit3, FiCalendar, FiUsers, FiShoppingCart, FiVideo, FiBriefcase } from 'react-icons/fi';
+import { ToastContainer, toast } from 'react-toastify';
 const iconMap = {
     FiBox, FiFileText, FiPenTool, FiTrendingUp, FiEdit3,
     FiCalendar, FiUsers, FiShoppingCart, FiVideo, FiBriefcase,
@@ -18,9 +19,20 @@ const colorMap = {
     FiBriefcase: { bg: "#F1EFE8", color: "#5F5E5A" },
 };
 
-const AvailableData = ({ card }) => {
+
+
+const AvailableData = ({ card, setCart,selectedCard,setSelectedCard }) => {
+    const handleBuy = () => {
+        toast.success(`${card.name} is add to cart`);
+        setBuy(true);
+        setCart(prevCart=>prevCart+1);
+        setSelectedCard([...selectedCard, card]);
+        
+    }
     const IconComponent = iconMap[card.icon];
     const { bg, color } = colorMap[card.icon] || { bg: "#F1EFE8", color: "#5F5E5A" };
+
+    const [buy,setBuy] = useState(false);
     return (
         <div className='mt-[40px] '>
             <div className='border rounded-xl p-4'>
@@ -44,7 +56,7 @@ const AvailableData = ({ card }) => {
                         <li className='mb-[6px]' key={index}>✓ {feature}</li>
                     ))}
                 </ul>
-                <button className='btn w-full mt-[16px] rounded-xl  text-white bg-linear-to-r from-[#662df7] to-[#871bfa]'>Buy Now</button>
+                <button disabled={buy ? true : false} onClick={handleBuy} className='btn bg-linear-to-r from-[#662df7] to-[#871bfa] w-full mt-[16px] rounded-xl  text-white '>{buy === true ? "Confirmed" : "Buy Now"}</button>
             </div>
 
         </div>
