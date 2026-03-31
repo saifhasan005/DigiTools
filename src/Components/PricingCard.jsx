@@ -9,7 +9,7 @@ const plans = [
 const PricingCard = () => (
   <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mt-10 px-4 max-w-[1200px] mx-auto'>
     {plans.map(({ name, desc, price, cta, badge, highlight, features }) => (
-      <div key={name} className={`hover:-translate-y-1 transition-transform duration-200 relative flex flex-col rounded-2xl shadow-xl p-6 border ${highlight ? 'bg-gradient-to-br from-[#662df7] to-[#871bfa] text-white border-transparent' : 'bg-white border-zinc-200'}`}>
+      <div key={name} className={`active:-translate-y-1 transition-transform duration-200 hover:-translate-y-1 transition-transform duration-200  flex flex-col rounded-2xl shadow-xl p-6 border ${highlight ? 'bg-gradient-to-br from-[#662df7] to-[#871bfa] text-white border-transparent' : 'bg-white border-zinc-200'}`}>
         {badge && <span className='absolute top-4 right-4 bg-[#fff4c7] text-[#db9f63] text-xs font-semibold px-3 py-1 rounded-full'>{badge}</span>}
         <p className='font-bold text-2xl'>{name}</p>
         <p className={`text-sm mt-1 mb-4 ${highlight ? 'text-purple-200' : 'text-gray-500'}`}>{desc}</p>

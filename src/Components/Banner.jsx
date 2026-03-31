@@ -21,7 +21,7 @@ const Banner = () => {
                     <a href="#" className='bg-gradient-to-r from-[#662df7] to-[#871bfa] text-white py-3 px-6 rounded-full font-bold text-sm'>
                         Explore Products
                     </a>
-                    <a href="#" className='hover:bg-purple-600 hover:text-white flex items-center gap-2 py-3 px-6 border font-bold rounded-full border-purple-500 text-purple-500 text-sm transition-colors duration-200'>
+                    <a href="#" className='active:bg-purple-600 active:text-white hover:bg-purple-600 hover:text-white flex items-center gap-2 py-3 px-6 border font-bold rounded-full border-purple-500 text-purple-500 text-sm transition-colors duration-200'>
                         <CiPlay1 /> Watch Demo
                     </a>
                 </div>
