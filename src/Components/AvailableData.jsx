@@ -39,7 +39,7 @@ const AvailableData = ({ card, setCart, selectedCard, setSelectedCard }) => {
     const [buy, setBuy] = useState(false);
     return (
         <div className='mt-10'>
-            <div className='border rounded-xl p-4'>
+            <div className='border border-zinc-200 shadow-xl rounded-xl p-4'>
                 <div className='flex justify-between'>
                     <div style={{ background: bg, color: color }}
                         className='w-12 h-12 rounded-xl flex items-center justify-center shrink-0'>
