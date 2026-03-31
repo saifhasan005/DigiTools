@@ -7,6 +7,7 @@ import { Suspense, useState } from 'react';
 import Blocked from './Components/Blocked';
 import Pricing from './Components/Pricing';
 import { ToastContainer } from 'react-toastify';
+import PreFooter from './Components/PreFooter';
 
 const cardData = fetch('/data.json')
   .then((cardData) => cardData.json());
@@ -24,6 +25,7 @@ function App() {
       </Suspense>
       <Blocked></Blocked>
       <Pricing></Pricing>
+      <PreFooter></PreFooter>
       <ToastContainer></ToastContainer>
     </>
   )

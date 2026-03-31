@@ -4,7 +4,7 @@ const PricingCard = () => {
     // console.log(cards);
     return (
         <div className='grid grid-cols-3  gap-[30px] mt-[40px]'>
-            <div className='border shadow-xl border-zinc-200 p-4 w-[340px] rounded-lg'>
+            <div className='border shadow-xl border-zinc-200 p-4 w-[380px] rounded-lg'>
                 <p className='font-bold text-3xl'>Starter</p>
                 <p className='text-gray-500 mb-[24px]'>Perfect for getting started</p>
                 <p><span className='font-bold text-3xl'>$0</span><span className='text-gray-500'>/Month</span></p>
@@ -33,7 +33,7 @@ const PricingCard = () => {
                 </ul>
                 <button className=' rounded-2xl mt-[64px] w-full btn bg-white text-[#871bfa]'>Start Pro Trial</button>
             </div>
-            <div className='border shadow-xl border-zinc-200 p-4 w-[340px] rounded-lg'>
+            <div className='border shadow-xl border-zinc-200 p-4 w-[380px] rounded-lg'>
                 <p className='font-bold text-3xl'>Enterprise</p>
                 <p className='text-gray-500 mb-[24px]'>For teams and business</p>
                 <p><span className='font-bold text-3xl'>$99</span><span className='text-gray-500'>/Month</span></p>
