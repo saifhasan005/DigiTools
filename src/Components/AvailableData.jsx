@@ -23,11 +23,15 @@ const colorMap = {
 
 const AvailableData = ({ card, setCart, selectedCard, setSelectedCard }) => {
     const handleBuy = () => {
+         const isFoundCart = selectedCard.find(item=> item.id ===card.id)
+            if(isFoundCart){
+                toast.error(`${card.name} already add to cart`)
+                return;
+            }
         toast.success(`${card.name} is add to cart`);
-        setBuy(true);
         setCart(prevCart => prevCart + 1);
         setSelectedCard([...selectedCard, card]);
-
+        setBuy(true);
     }
     const IconComponent = iconMap[card.icon];
     const { bg, color } = colorMap[card.icon] || { bg: "#F1EFE8", color: "#5F5E5A" };
