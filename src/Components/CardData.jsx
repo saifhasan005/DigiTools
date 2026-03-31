@@ -7,7 +7,7 @@ const CardData = ({ cardData, setCart, cart }) => {
     const cards = use(cardData);
     // console.log(data);
     const [selected, isselected] = useState("products")
-    const [selectedCard, setSelectedCard] = useState([]); 
+    const [selectedCard, setSelectedCard] = useState([]);
     return (
         <div >
             <div className='max-w-[1500px] mt-[120px] mx-auto text-center'>
@@ -20,13 +20,14 @@ const CardData = ({ cardData, setCart, cart }) => {
             </div>
             <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 mx-auto max-w-[1500px] gap-8'>
 
-               {selected === "products" ? (
-                cards.map(card=>
-                    <AvailableData setSelectedCard={setSelectedCard} card={card} key={card.id} selectedCard={selectedCard} setCart={setCart}></AvailableData>
-                )
-               ) : (
-                <SelectedCard selectedCard={selectedCard}></SelectedCard>
-               )}
+                {selected === "products" ? (
+                    cards.map(card =>
+                        <AvailableData setSelectedCard={setSelectedCard} card={card} key={card.id} selectedCard={selectedCard} setCart={setCart}></AvailableData>
+                    )
+                ) : (
+                    <div className='col-span-1 md:col-span-2 lg:col-span-3'> 
+                        <SelectedCard setCart={setCart} setSelectedCard={setSelectedCard} selectedCard={selectedCard}></SelectedCard></div>
+                )}
 
             </div>
         </div>

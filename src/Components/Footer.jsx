@@ -61,16 +61,12 @@ const Footer = () => {
                         <h4 className='font-semibold text-sm uppercase tracking-widest mb-4'>Follow Us</h4>
                         <div className='flex gap-4'>
                             {[
-                                { icon: <a target='_blank' href="https://www.instagram.com/"><IoLogoInstagram size={20} /></a>, label: 'Instagram' },
-                                { icon: <a target='_blank' href="https://facebook.com/"><FaFacebook size={20} /></a>, label: 'Facebook' },
-                                { icon: <a target='_blank' href="https://x.com/"><FaXTwitter size={20} /></a>, label: 'Twitter/X' },
-                            ].map(({ icon, label }) => (
-                                <a
-                                    key={label}
-                                    href="#"
-                                    aria-label={label}
-                                    className='text-gray-400 hover:text-white transition-colors duration-200'
-                                >
+                                { icon: <IoLogoInstagram size={20} />, href: "https://www.instagram.com/", label: 'Instagram' },
+                                { icon: <FaFacebook size={20} />, href: "https://facebook.com/", label: 'Facebook' },
+                                { icon: <FaXTwitter size={20} />, href: "https://x.com/", label: 'Twitter/X' },
+                            ].map(({ icon, href, label }) => (
+                                <a key={label} target='_blank' href={href} aria-label={label}
+                                    className='text-gray-400 hover:text-white transition-colors duration-200'>
                                     {icon}
                                 </a>
                             ))}
